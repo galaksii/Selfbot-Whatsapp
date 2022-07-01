@@ -155,7 +155,7 @@ async function SBVHtear() {
 					if (cuj[0] == "profile") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/tiktokprofile?query=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/tiktokprofile?query=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const pp = await response.json()
 							const cok = pp.result
 							let dat = "*TIKTOK PROFILE*\n"
@@ -176,7 +176,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "hastag") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/tiktokhastag?query=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/tiktokhastag?query=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear')
 							const pp = await response.json()
 							const cok = pp.result
 							let dat = "*TIKTOK HASTAG*\n"
@@ -197,7 +197,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "download") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/tiktokdl?link=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/tiktokdl?link=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear')
 							const pp = await response.json()
 							const mek = pp.result
 							await VHsendVideoUrl(VH, to, mek.video, "")
@@ -218,7 +218,7 @@ async function SBVHtear() {
 					if (cuj[0] == "profile") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/igprofile?query=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/igprofile?query=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const vez = await response.json()
 							const cok = vez.result
 							let ve = "*INSTAGRAM PROFILE*\n"
@@ -236,7 +236,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "story") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/igstory?query=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/igstory?query=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const vez = await response.json()
 							const cok = vez.result.story.itemlist
 							for (var io = 0; io < cok.length; io++) {
@@ -257,7 +257,7 @@ async function SBVHtear() {
 							const barang = cuj[1].split("|")
 							const hasil = barang[0]
 							const value = Number(barang[1]) - 1
-							const response = await Requests(Host + '/ighighlight?query=' + hasil + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/ighighlight?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const pp = await response.json()
 							const cok = pp.result.highlight
 							let no = 0
@@ -297,7 +297,7 @@ async function SBVHtear() {
 							const barang = cuj[1].split("|")
 							const hasil = barang[0]
 							const value = Number(barang[1]) - 1
-							const response = await Requests(Host + '/igtv?query=' + hasil + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/igtv?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const ve = await response.json()
 							const cok = ve.result.igTv
 							let no = 0
@@ -328,7 +328,7 @@ async function SBVHtear() {
 							const barang = cuj[1].split("|")
 							const hasil = barang[0]
 							const value = Number(barang[1]) - 1
-							const response = await Requests(Host + '/ighastag?query=' + hasil + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/ighastag?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const ve = await response.json()
 							const cok = ve.result.data
 							let no = 0
@@ -361,7 +361,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "download") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/instadl?link=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/instadl?link=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear')
 							const ve = await response.json()
 							const cok = ve.result.post
 							for (var io = 0; io < cok.length; io++) {
@@ -381,7 +381,7 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith("facebook download")) {
 				const vhani = txt.replace('facebook download' + " ", "")
-				const response = await Requests(Host + "/fbdl?link=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/fbdl?link=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const fox = data.result
 				let veza = "*_FACEBOOK DOWNLOAD_*"
@@ -408,7 +408,7 @@ async function SBVHtear() {
 							const barang = cuj[1].split("|")
 							const hasil = barang[0]
 							const value = Number(barang[1]) - 1
-							const response = await Requests(Host + '/youtube?query=' + hasil + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/youtube?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const pp = await response.json()
 							const cok = pp.result
 							if (barang.length == 1) {
@@ -423,7 +423,7 @@ async function SBVHtear() {
 								await VHsendImageUrl(VH, to, "https://fontlot.com/wp-content/uploads/2020/03/youtube-logo-font.jpg", dat)
 							}
 							if (barang.length == 2) {
-								const response = await Requests(Host + '/ytdl?link=https://youtu.be/' + cok[value].id + '&apikey=' + PremiumKey)
+								const response = await Requests(Host + '/ytdl?link=https://youtu.be/' + cok[value].id + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 								const ve = await response.json()
 								const mek = ve.result
 								let dat = "*_Detail YTDL*_\n"
@@ -440,7 +440,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "download") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/ytdl?link=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/ytdl?link=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const ve = await response.json()
 							const mek = ve.result
 							let dat = "*_Detail YTDL*_\n"
@@ -456,7 +456,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "mp3") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + "/ytmp3?query=" + jaran + "&apikey=" + PremiumKey)
+							const response = await Requests(Host + "/ytmp3?query=" + jaran + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 							const ve = await response.json()
 							const mek = ve.result
 							let dat = "*_Detail MP3*_\n"
@@ -476,7 +476,7 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith('googlesearch')) {
 				const vhani = txt.replace('googlesearch' + " ", "")
-				const response = await Requests(Host + '/googlesearch?query=' + vhani + '&apikey=' + PremiumKey)
+				const response = await Requests(Host + '/googlesearch?query=' + vhani + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear')
 				const ppek = await response.json()
 				const mek = ppek.result
 				let no = 0
@@ -491,7 +491,7 @@ async function SBVHtear() {
 				const barang = vhani.split("|")
 				const hasil = barang[0]
 				const value = Number(barang[1])
-				const response = await Requests(Host + '/googleimg?query=' + hasil + '&apikey=' + PremiumKey)
+				const response = await Requests(Host + '/googleimg?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear')
 				const ppek = await response.json()
 				const mek = ppek.result.result_search
 				let num = 0
@@ -504,7 +504,7 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith('playstore')) {
 				const vhani = txt.replace('playstore' + " ", "")
-				const response = await Requests(Host + '/playstore?query=' + vhani + '&apikey=' + PremiumKey)
+				const response = await Requests(Host + '/playstore?query=' + vhani + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 				const ppek = await response.json()
 				const mek = ppek.result
 				let no = 0
@@ -559,7 +559,7 @@ async function SBVHtear() {
 								dat += "\n • Created_at: " + cok[value].created_at
 								dat += "\n • From city: " + cok[value].orig_track_city.city + " | " + cok[value].orig_track_city.country
 								dat += "\n • Url: " + urel
-								const response = await Requests(Host + '/getsmule?link=' + urel + '&apikey=' + PremiumKey)
+								const response = await Requests(Host + '/getsmule?link=' + urel + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 								const pp = await response.json()
 								const mek = pp.result
 								if (mek.Type === "audio") {
@@ -575,7 +575,7 @@ async function SBVHtear() {
 					} else if (cuj[0] == "download") {
 						try {
 							VHsendMessage(VH, to, 'please wait..')
-							const response = await Requests(Host + '/getsmule?link=' + cuj[1] + '&apikey=' + PremiumKey)
+							const response = await Requests(Host + '/getsmule?link=' + cuj[1] + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 							const pp = await response.json()
 							const mek = pp.result
 							if (mek.Type === "audio") {
@@ -593,7 +593,7 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith("starmaker download")) {
 				const vhani = txt.replace('starmaker download' + " ", "")
-				const response = await Requests(Host + "/starmakerdl?link=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/starmakerdl?link=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const cok = data.result
 				let dat = "*STARMAKER*\n"
@@ -606,13 +606,13 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith("cocofun download")) {
 				const vhani = txt.replace('cocofun download' + " ", "")
-				const response = await Requests(Host + "/cocodownload?link=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/cocodownload?link=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const cok = data.result
 				VHsendVideoUrl(VH, to, cok.video, "*COCOFUN DOWNLOAD*")
 			} else if (txt.startsWith("xxx-search")) {
 				const vhani = txt.replace('xxx-search' + " ", "")
-				const response = await Requests(Host + "/xxxsearch?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/xxxsearch?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.data
 				let fox = "*_XXX SEARCH_*\n\n"
@@ -624,13 +624,13 @@ async function SBVHtear() {
 				VHsendImageUrl(VH, to, asu[0].image, fox)
 			} else if (txt.startsWith("xxx-download")) {
 				const vhani = txt.replace('xxx-download' + " ", "")
-				const response = await Requests(Host + "/xxxdownload?link=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/xxxdownload?link=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.urlVideo
 				VHsendVideoUrl(VH, to, asu[0].videoUrl, "*XXX DOWNLOAD*")
 			} else if (txt.startsWith("lk21")) {
 				const vhani = txt.replace('lk21' + " ", "")
-				const response = await Requests(Host + "/downloadfilm?judul=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/downloadfilm?judul=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.data
 				let fox = "*_LK21 DOWNLOAD_*\n\n"
@@ -641,7 +641,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("neonimesearch")) {
 				const vhani = txt.replace('neonimesearch' + " ", "")
-				const response = await Requests(Host + "/neonime_search?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/neonime_search?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_NOENIME SEARCH_*\n\n"
@@ -654,7 +654,7 @@ async function SBVHtear() {
 				console.log("belum")
 			} else if (txt.startsWith("nekopoisearch")) {
 				const vhani = txt.replace('nekopoisearch' + " ", "")
-				const response = await Requests(Host + "/nekosearch?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/nekosearch?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_NEKOPOI SEARCH_*\n\n"
@@ -664,7 +664,7 @@ async function SBVHtear() {
 				}
 				VHsendImageUrl(VH, to, asu[0].image, fox)
 			} else if (txt.startsWith("nekohentai")) {
-				const response = await Requests(Host + "/nekohentai&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/nekohentai&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Neko Hentai*\n"
@@ -675,7 +675,7 @@ async function SBVHtear() {
 				}
 				VHsendImageUrl(VH, to, asu[0].image, fox)
 			} else if (txt.startsWith("neko3d")) {
-				const response = await Requests(Host + "/neko3d&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/neko3d&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Neko 3D*\n"
@@ -686,7 +686,7 @@ async function SBVHtear() {
 				}
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("nekojavcosplay")) {
-				const response = await Requests(Host + "/nekojavcosplay&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/nekojavcosplay&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Neko JAV Cosplay*\n"
@@ -696,7 +696,7 @@ async function SBVHtear() {
 				}
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("nekonewepisode")) {
-				const response = await Requests(Host + "/nekonewepisode&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/nekonewepisode&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Neko New Episode*\n"
@@ -707,7 +707,7 @@ async function SBVHtear() {
 				}
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("nekojavlist")) {
-				const response = await Requests(Host + "/nekojavlist&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/nekojavlist&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Neko JAV List*\n"
@@ -719,7 +719,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 
 			} else if (txt.startsWith("ongoinganoboy")) {
-				const response = await Requests(Host + "/ongoinganoboy&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/ongoinganoboy&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_On Going Anoboy_*\n\n"
@@ -736,7 +736,7 @@ async function SBVHtear() {
 				console.log("belum")
 			} else if (txt.startsWith("joox")) {
 				const vhani = txt.replace('joox' + " ", "")
-				const response = await Requests(Host + "/music?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/music?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const cok = data.result
 				let dat = "*JOOX MUSIC*\n"
@@ -751,12 +751,12 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith("lirik")) {
 				const vhani = txt.replace('lirik' + " ", "")
-				const response = await Requests(Host + "/liriklagu?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/liriklagu?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear")
 				const data = await response.json()
 				VHsendMessage(VH, to, data.result.result)
 			} else if (txt.startsWith("chord")) {
 				const vhani = txt.replace('chord' + " ", "")
-				const response = await Requests(Host + "/chordguitar?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/chordguitar?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendMessage(VH, to, data.result.result)
 			} else if (txt.startsWith('pinterest')) {
@@ -764,7 +764,7 @@ async function SBVHtear() {
 				const barang = vhani.split("|")
 				const hasil = barang[0]
 				const value = Number(barang[1])
-				const response = await Requests(Host + '/pinterest?query=' + hasil + '&apikey=' + PremiumKey)
+				const response = await Requests(Host + '/pinterest?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 				const ppek = await response.json()
 				const mek = ppek.result
 				let num = 0
@@ -780,7 +780,7 @@ async function SBVHtear() {
 				VHsendImageUrl(VH, to, vhani, "*Pinterest*")
 			} else if (txt.startsWith("zodiak")) {
 				const vhani = txt.replace('zodiak' + " ", "")
-				const response = await Requests(Host + "/zodiak?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/zodiak?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const elfox = data.result
 				let fox = "*Result Zodiak*"
@@ -792,7 +792,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("wikipedia")) {
 				const vhani = txt.replace('wikipedia' + " ", "")
-				const response = await Requests(Host + "/wikipedia?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/wikipedia?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				const pp = datas.result.ImgResult
@@ -802,14 +802,14 @@ async function SBVHtear() {
 				VHsendImageUrl(VH, to, pp[0], fox)
 			} else if (txt.startsWith("brainly")) {
 				const vhani = txt.replace('brainly' + " ", "")
-				const response = await Requests(Host + "/branly?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/branly?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear")
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*VHSelfbot*\n\n" + asu.data
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("kbbi")) {
 				const vhani = txt.replace('kbbi' + " ", "")
-				const response = await Requests(Host + "/kbbi?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/kbbi?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*VHSelfbot*\n\n" + asu.hasil
@@ -817,7 +817,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("calcu")) {
 				const vhani = txt.replace('calcu' + " ", "")
-				const response = await Requests(Host + "/calculator?value=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/calculator?value=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear")
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*VHSelfbot*\n\n" + asu.data
@@ -826,7 +826,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("corona")) {
 				const vhani = txt.replace('corona' + " ", "")
-				const response = await Requests(Host + "/calculator?value=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/calculator?value=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datax = await response.json()
 				const datas = datax.result
 				let fox = "*Corona Info*\n\n"
@@ -845,7 +845,7 @@ async function SBVHtear() {
 				}
 			} else if (txt.startsWith("cuaca")) {
 				const vhani = txt.replace('cuaca' + " ", "")
-				const response = await Requests(Host + "/weather?city=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/weather?city=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*VHSelfbot*\n\n" + asu.weather
@@ -854,7 +854,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("bmkg")) {
 				const vhani = txt.replace('bmkg' + " ", "")
-				const response = await Requests(Host + "/infogempa&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/infogempa&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_Info Gempa_*\n\n"
@@ -873,7 +873,7 @@ async function SBVHtear() {
 			} else if (txt == "cekongkir") {
 				console.log("belum")
 			} else if (txt.startsWith("togel")) {
-				const response = await Requests(Host + "/togel&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/togel&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.hasil
 				let fox = "*_Result Togel_*\n\n"
@@ -892,7 +892,7 @@ async function SBVHtear() {
 				console.log("belum")
 			} else if (txt.startsWith("resep")) {
 				const vhani = txt.replace('resep' + " ", "")
-				const response = await Requests(Host + "/resepmasakan?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/resepmasakan?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear")
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Result Resep*\n"
@@ -905,7 +905,7 @@ async function SBVHtear() {
 				console.log("belum")
 			} else if (txt.startsWith("gsmarena")) {
 				const vhani = txt.replace('gsmarena' + " ", "")
-				const response = await Requests(Host + "/gsmarena?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/gsmarena?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Result GSMarena*\n"
@@ -913,7 +913,7 @@ async function SBVHtear() {
 				fox += "\n\n*Spesifikasi :*\n" + asu.spec
 				VHsendImageUrl(VH, to, asu.image, fox)
 			} else if (txt.startsWith("quranlist")) {
-				const response = await Requests(Host + "/quranlist?&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/quranlist?&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.list
 				let fox = "*_Result Quran_*\n\n"
@@ -925,7 +925,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("jadwalsholat")) {
 				const vhani = txt.replace('jadwalsholat' + " ", "")
-				const response = await Requests(Host + "/jadwalsholat?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/jadwalsholat?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Result Sholat*\n"
@@ -939,13 +939,13 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("artinama")) {
 				const vhani = txt.replace('artinama' + " ", "")
-				const response = await Requests(Host + "/artinama?nama=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/artinama?nama=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.hasil)
 			} else if (txt.startsWith("artimimpi")) {
 				const vhani = txt.replace('artimimpi' + " ", "")
-				const response = await Requests(Host + "/artimimpi?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/artimimpi?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.hasil)
@@ -954,7 +954,7 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = await Requests(Host + "/primbonjodoh?nama=" + fox + "&pasangan=" + vez + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/primbonjodoh?nama=" + fox + "&pasangan=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.hasil)
@@ -964,13 +964,13 @@ async function SBVHtear() {
 				const fox = pemisah[0]
 				const vez = pemisah[1]
 				const zal = pemisah[2]
-				const response = await Requests(Host + "/ramalweton?tgl=" + fox + "&bln=" + vez + "&thn=" + zal + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/ramalweton?tgl=" + fox + "&bln=" + vez + "&thn=" + zal + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.hasil)
 			} else if (txt.startsWith("nomor")) {
 				const vhani = txt.replace('nomor' + " ", "")
-				const response = await Requests(Host + "/nomerhoki?no=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/nomerhoki?no=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.hasil)
@@ -980,12 +980,12 @@ async function SBVHtear() {
 				const fox = pemisah[0]
 				const vez = pemisah[1]
 				const zal = pemisah[2]
-				const response = await Requests(Host + "/harijadian?tgl=" + fox + "&bln=" + vez + "&thn=" + zal + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/harijadian?tgl=" + fox + "&bln=" + vez + "&thn=" + zal + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.hasil)
 			} else if (txt == "herolistml") {
-				const response = await Requests(Host + "/mlherolist?apikey=" + PremiumKey)
+				const response = await Requests(Host + "/mlherolist?apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const asu = data.result.hasil
 				let fox = "*List Hero*\n"
@@ -997,7 +997,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("heroml")) {
 				const vhani = txt.replace('heroml' + " ", "")
-				const response = await Requests(Host + "/herodetail?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/herodetail?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Detail Hero*\n"
@@ -1008,7 +1008,7 @@ async function SBVHtear() {
 				VHsendImageUrl(VH, to, asu.pictHero, fox)
 			} else if (txt.startsWith("ipwho")) {
 				const vhani = txt.replace('ipwho' + " ", "")
-				const response = await Requests(Host + "/ipwhois?ipaddr=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/ipwhois?ipaddr=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*Detail IP Address*\n"
@@ -1026,54 +1026,54 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("textscreen")) {
 				const vhani = txt.replace('textscreen' + " ", "")
-				const response = await Requests(Host + "/textscreen?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/textscreen?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				VHsendMessage(VH, to, asu.text)
 			} else if (txt.startsWith("ceritasex")) {
 				const vhani = txt.replace('ceritasex' + " ", "")
-				const response = await Requests(Host + "/cerita_sex&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/cerita_sex&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = asu.judul
 				fox += "\n" + asu.cerita
 				VHsendImageUrl(VH, to, asu.image, fox)
 			} else if (txt == "randompuisi") {
-				const response = Host + "/puisi_image&apikey=" + PremiumKey
+				const response = Host + "/puisi_image&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*Puisi Image*")
 			} else if (txt == "randompantun") {
-				const response = await Requests(Host + "/random_pantun&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/random_pantun&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendMessage(VH, to, data.result.pantun)
 			} else if (txt == "quoteid") {
-				const response = await Requests(Host + "/quoteid&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/quoteid&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendMessage(VH, to, data.result.kata)
 			} else if (txt == "quotes") {
-				const response = await Requests(Host + "/quotes?apikey=" + PremiumKey)
+				const response = await Requests(Host + "/quotes?apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendMessage(VH, to, data.result.content)
 			} else if (txt == "randomcat") {
-				const response = await Requests(Host + "/randomcat?apikey=" + PremiumKey)
+				const response = await Requests(Host + "/randomcat?apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendImageUrl(VH, to, data.result.url, "*_Random Cat_*")
 			} else if (txt == "randomnekonime") {
-				const response = await Requests(Host + "/randomnekonime&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/randomnekonime&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendImageUrl(VH, to, data.result.result, "*_Random Nekonime_*")
 			} else if (txt == "randomloli") {
-				const response = await Requests(Host + "/randomloli&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/randomloli&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendImageUrl(VH, to, data.result.result, "*RANDOM LOLI*")
 			} else if (txt == "randomwibu") {
-				const response = await Requests(Host + "/randomwibu&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/randomwibu&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				let fox = "*Nama : *" + data.result.nama
 				fox += "*\nDeskripsi : *" + data.result.deskripsi
 				VHsendImageUrl(VH, to, data.result.foto, fox)
 			} else if (txt.startsWith("urlshortener")) {
 				const vhani = txt.replace('urlshortener' + " ", "")
-				const response = await Requests(Host + "/shortener?link=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/shortener?link=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				VHsendMessage(VH, to, data.result.Short)
 			} else if (txt.startsWith("ssweb")) {
@@ -1081,19 +1081,19 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/ssweb?link=" + fox + "&type=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/ssweb?link=" + fox + "&type=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_SSWEB_*")
 			} else if (txt.startsWith("jarak")) {
 				const vhani = txt.replace('jarak' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = await Requests(Host + "/distance?from=" + fox + "&to=" + vez + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/distance?from=" + fox + "&to=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear")
 				const datas = await response.json()
 				VHsendMessage(VH, to, datas.result.data)
 			} else if (txt.startsWith("alamat")) {
 				const vhani = txt.replace('alamat' + " ", "")
-				const response = await Requests(Host + "/infoalamat?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/infoalamat?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear")
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_Info Alamat_*\n\n"
@@ -1103,7 +1103,7 @@ async function SBVHtear() {
 			} else if (txt == "berita terbaru") {
 				console.log("belum")
 			} else if (txt == "jadwal bola") {
-				const response = await Requests(Host + "/jadwalbola&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/jadwalbola&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.data
 				let fox = "*_Result Bola_*\n\n"
@@ -1118,7 +1118,7 @@ async function SBVHtear() {
 				VHsendMessage(VH, to, fox)
 			} else if (txt.startsWith("motor")) {
 				const vhani = txt.replace('motor' + " ", "")
-				const response = await Requests(Host + "/infomotor?merk=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/infomotor?merk=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_Info Motor_*\n\n"
@@ -1130,7 +1130,7 @@ async function SBVHtear() {
 				VHsendImageUrl(VH, to, asu.image, fox)
 			} else if (txt.startsWith("mobil")) {
 				const vhani = txt.replace('mobil' + " ", "")
-				const response = await Requests(Host + "/infomobil?merk=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/infomobil?merk=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result
 				let fox = "*_Info Mobil_*\n\n"
@@ -1143,7 +1143,7 @@ async function SBVHtear() {
 				
 			} else if (txt.startsWith("otakusearch")) {
 				const vhani = txt.replace('otakusearch' + " ", "")
-				const response = await Requests(Host + "/otakusearch?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/otakusearch?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.data
 				let fox = "*_Result Otaku_*\n\n"
@@ -1158,7 +1158,7 @@ async function SBVHtear() {
 				VHsendImageUrl(VH, to, asu[0].image, fox)
 				
 			} else if (txt == "otakulatest") {
-				const response = await Requests(Host + "/otakulatest&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/otakulatest&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const datas = await response.json()
 				const asu = datas.result.data
 				let fox = "*_Latest Otaku_*\n\n"
@@ -1174,7 +1174,7 @@ async function SBVHtear() {
 				
 			} else if (txt.startsWith("nulis")) {
 				const vhani = txt.replace('nulis' + " ", "")
-				const response = Host + "/write?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/write?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_MAGER NULIS_*")
 				
 			} else if (txt.startsWith('wasticker')) {
@@ -1182,7 +1182,7 @@ async function SBVHtear() {
 				const barang = vhani.split("|")
 				const hasil = barang[0]
 				const value = Number(barang[1])
-				const response = await Requests(Host + '/wasticker?query=' + hasil + '&apikey=' + PremiumKey)
+				const response = await Requests(Host + '/wasticker?query=' + hasil + '&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear' )
 				const ppek = await response.json()
 				const mek = ppek.result.data
 				let num = 0
@@ -1196,29 +1196,29 @@ async function SBVHtear() {
 			
 			} else if (txt.startsWith("watertext")) {
 				const vhani = txt.replace('watertext' + " ", "")
-				const response = Host + "/water_maker?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/water_maker?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*WATER MAKER*")
 			} else if (txt.startsWith("swatertext")) {
 				const vhani = txt.replace('swatertext' + " ", "")
-				const response = Host + "/water_maker?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/water_maker?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("firetext")) {
 				const vhani = txt.replace('firetext' + " ", "")
-				const response = Host + "/fire_maker?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/fire_maker?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*FIRE MAKER*")
 			} else if (txt.startsWith("sfiretext")) {
 				const vhani = txt.replace('sfiretext' + " ", "")
-				const response = Host + "/fire_maker?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/fire_maker?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("metaltext")) {
 				const vhani = txt.replace('metaltext' + " ", "")
-				const response = Host + "/metal_maker?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/metal_maker?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear"
 				VHsendImageUrl(VH, to, response, "*METAL MAKER*")
 			} else if (txt.startsWith("smetaltext")) {
 				const vhani = txt.replace('smetaltext' + " ", "")
-				const response = Host + "/metal_maker?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/metal_maker?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 			
 			} else if (txt.startsWith("ballontext")) {
@@ -1226,14 +1226,14 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/balloonmaker?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/balloonmaker?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*BALLON MAKER*")
 			} else if (txt.startsWith("sballontext")) {
 				const vhani = txt.replace('sballontext' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/balloonmaker?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/balloonmaker?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("padlock")) {
@@ -1241,32 +1241,32 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/padlock?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/padlock?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*PAD LOCK*")
 			} else if (txt.startsWith("spadlock")) {
 				const vhani = txt.replace('spadlock' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/padlock?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/padlock?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("giftext")) {
 				const vhani = txt.replace('giftext' + " ", "")
-				const response = Host + "/textxgif?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/textxgif?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*GIF MAKER*")
 			} else if (txt.startsWith("sgiftext")) {
 				const vhani = txt.replace('sgiftext' + " ", "")
-				const response = Host + "/textxgif?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/textxgif?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("slidingtext")) {
 				const vhani = txt.replace('slidingtext' + " ", "")
-				const response = Host + "/slidingtext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/slidingtext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendVideoUrl(VH, to, response, "*SLIDING MAKER*")
 			} else if (txt.startsWith("zslidingtext")) {
 				const vhani = txt.replace('zslidingtext' + " ", "")
-				const response = Host + "/slidingtext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/slidingtext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("bannerff")) {
@@ -1274,23 +1274,23 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/bannerff?title=" + fox + "&text=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/bannerff?title=" + fox + "&text=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*BANNER FF*")
 			} else if (txt.startsWith("sbannerff")) {
 				const vhani = txt.replace('sbannerff' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/bannerff?title=" + fox + "&text=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/bannerff?title=" + fox + "&text=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("fflogo ")) {
 				const vhani = txt.replace('fflogo' + " ", "")
-				const response = Host + "/logoff?hero=alok&text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/logoff?hero=alok&text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_FF MAKER_*")
 			} else if (txt.startsWith("sfflogo ")) {
 				const vhani = txt.replace('sfflogo' + " ", "")
-				const response = Host + "/logoff?hero=alok&text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/logoff?hero=alok&text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("mllogo")) {
@@ -1298,68 +1298,68 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/logoml?hero=" + fox + "&text=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/logoml?hero=" + fox + "&text=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*ML LOGO*")
 			} else if (txt.startsWith("smllogo")) {
 				const vhani = txt.replace('smllogo' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/logoml?hero=" + fox + "&text=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/logoml?hero=" + fox + "&text=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("gamelogo")) {
 				const vhani = txt.replace('gamelogo' + " ", "")
-				const response = Host + "/gamelogo?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/gamelogo?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_GAME MAKER_*")
 			} else if (txt.startsWith("sgamelogo")) {
 				const vhani = txt.replace('sgamelogo' + " ", "")
-				const response = Host + "/gamelogo?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/gamelogo?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear"
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("blackpinktext")) {
 				const vhani = txt.replace('blackpinktext' + " ", "")
-				const response = Host + "/blackpinkicon?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/blackpinkicon?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear"
 				VHsendImageUrl(VH, to, response, "*_BLACKPINK MAKER_*")
 			} else if (txt.startsWith("sblackpinktext")) {
 				const vhani = txt.replace('sblackpinktext' + " ", "")
-				const response = Host + "/blackpinkicon?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/blackpinkicon?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("thundertext")) {
 				const vhani = txt.replace('thundertext' + " ", "")
-				const response = Host + "/thundertext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/thundertext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_THUNDER MAKER_*")
 			} else if (txt.startsWith("sthundertext")) {
 				const vhani = txt.replace('sthundertext' + " ", "")
-				const response = Host + "/thundertext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/thundertext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("silktext")) {
 				const vhani = txt.replace('silktext' + " ", "")
-				const response = Host + "/silktext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/silktext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_SILK MAKER_*")
 			} else if (txt.startsWith("zsilktext")) {
 				const vhani = txt.replace('zsilktext' + " ", "")
-				const response = Host + "/silktext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/silktext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 			
 			} else if (txt.startsWith("partytext")) {
 				const vhani = txt.replace('partytext' + " ", "")
-				const response = Host + "/partytext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/partytext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_PARTY MAKER_*")
 			} else if (txt.startsWith("spartytext")) {
 				const vhani = txt.replace('spartytext' + " ", "")
-				const response = Host + "/partytext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/partytext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("romancetext")) {
 				const vhani = txt.replace('romancetext' + " ", "")
-				const response = Host + "/romancetext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/romancetext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_ROMANCE MAKER_*")
 			} else if (txt.startsWith("sromancetext")) {
 				const vhani = txt.replace('sromancetext' + " ", "")
-				const response = Host + "/romancetext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/romancetext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("googletext")) {
@@ -1368,7 +1368,7 @@ async function SBVHtear() {
 				const fox = pemisah[0]
 				const vez = pemisah[1]
 				const zal = pemisah[2]
-				const response = Host + "/googletext?text1=" + fox + "&text2=" + vez + "&text3=" + zal + "&apikey=" + PremiumKey
+				const response = Host + "/googletext?text1=" + fox + "&text2=" + vez + "&text3=" + zal + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*GOOGLE TEXT*")
 			} else if (txt.startsWith("sgoogletext")) {
 				const vhani = txt.replace('sgoogletext' + " ", "")
@@ -1376,25 +1376,25 @@ async function SBVHtear() {
 				const fox = pemisah[0]
 				const vez = pemisah[1]
 				const zal = pemisah[2]
-				const response = Host + "/googletext?text1=" + fox + "&text2=" + vez + "&text3=" + zal + "&apikey=" + PremiumKey
+				const response = Host + "/googletext?text1=" + fox + "&text2=" + vez + "&text3=" + zal + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("glowtext")) {
 				const vhani = txt.replace('glowtext' + " ", "")
-				const response = Host + "/glowtext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/glowtext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_GLOW MAKER_*")
 			} else if (txt.startsWith("sglowtext")) {
 				const vhani = txt.replace('sglowtext' + " ", "")
-				const response = Host + "/glowtext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/glowtext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("lovetext")) {
 				const vhani = txt.replace('lovetext' + " ", "")
-				const response = Host + "/lovemessagetext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/lovemessagetext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear"
 				VHsendImageUrl(VH, to, response, "*_LOVE MAKER_*")
 			} else if (txt.startsWith("slovetext")) {
 				const vhani = txt.replace('slovetext' + " ", "")
-				const response = Host + "/lovemessagetext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/lovemessagetext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("glitchtext")) {
@@ -1402,23 +1402,23 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/glitchtext?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/glitchtext?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_GLITCH MAKER_*")
 			} else if (txt.startsWith("sglitchtext")) {
 				const vhani = txt.replace('sglitchtext' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/glitchtext?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/glitchtext?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("galaxytext")) {
 				const vhani = txt.replace('galaxytext' + " ", "")
-				const response = Host + "/galaxytext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/galaxytext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*_GALAXY MAKER_*")
 			} else if (txt.startsWith("sgalaxytext")) {
 				const vhani = txt.replace('sgalaxytext' + " ", "")
-				const response = Host + "/galaxytext?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/galaxytext?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 				
 			} else if (txt.startsWith("pornlogo")) {
@@ -1426,28 +1426,28 @@ async function SBVHtear() {
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/pornlogo?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/pornlogo?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendImageUrl(VH, to, response, "*PORN LOGO*")
 			} else if (txt.startsWith("spornlogo")) {
 				const vhani = txt.replace('spornlogo' + " ", "")
 				pemisah = vhani.split("|")
 				const fox = pemisah[0]
 				const vez = pemisah[1]
-				const response = Host + "/pornlogo?text1=" + fox + "&text2=" + vez + "&apikey=" + PremiumKey
+				const response = Host + "/pornlogo?text1=" + fox + "&text2=" + vez + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				VHsendStickerUrl(VH, to, response)
 					
 			} else if (txt.startsWith("hartatahta")) {
 				const vhani = txt.replace('hartatahta' + " ", "")
-				const response = Host + "/hartatahta?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/hartatahta?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				await VHsendImageUrl(VH, to, response, "*_HARTA TAHTA_*")
 			} else if (txt.startsWith("shartatahta")) {
 				const vhani = txt.replace('shartatahta' + " ", "")
-				const response = Host + "/hartatahta?text=" + vhani + "&apikey=" + PremiumKey
+				const response = Host + "/hartatahta?text=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" 
 				await VHsendStickerUrl(VH, to, response)
 			
 			} else if (txt.startsWith("music")) {
 				const vhani = txt.replace('music' + " ", "")
-				const response = await Requests(Host + "/music?query=" + vhani + "&apikey=" + PremiumKey)
+				const response = await Requests(Host + "/music?query=" + vhani + "&apikey=88f9a41eFe1533Fe4c9dFe855bFeaca13f7f4d1bVHTear" )
 				const data = await response.json()
 				const cok = data.result
 				let dat = "*JOOX MUSIC*\n"
